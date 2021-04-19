@@ -16,7 +16,7 @@ export default class Main extends Component {
     if (settings.isSplash) {
       return (
         <div>
-          <BrowserRouter basename="/">
+          <BrowserRouter basename={process.env.PUBLIC_URL}>
             <Switch>
               <Route
                 path="/"
@@ -73,7 +73,7 @@ export default class Main extends Component {
     } else {
       return (
         <div>
-          <BrowserRouter basename="/">
+          <BrowserRouter basename={process.env.PUBLIC_URL}>
             <Switch>
               <Route
                 path="/"
